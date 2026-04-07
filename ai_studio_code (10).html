@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCAM | Publicidade Indoor - Campo Mourão</title>
+    
+    <!-- Fonts - Seleção Corporate Professional -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Frameworks -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tcamYellow: '#FFC600',
+                        richBlack: '#0D0D0D',
+                        darkBorder: '#1F1F1F',
+                    },
+                    fontFamily: {
+                        title: ['Archivo', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { 
+            background-color: #0D0D0D; 
+            color: #F4F4F4; 
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Tipografia Fluida para Mobile */
+        .h-hero { font-size: clamp(2.25rem, 6vw, 4.5rem); font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; }
+        .h-section { font-size: clamp(1.75rem, 4vw, 3rem); font-weight: 700; line-height: 1.2; }
+        
+        .mesh-bg { 
+            background-image: 
+                radial-gradient(at 0% 0%, hsla(46, 100%, 50%, 0.05) 0px, transparent 50%), 
+                radial-gradient(at 100% 100%, hsla(0, 0%, 10%, 0.5) 0px, transparent 50%); 
+        }
+
+        .card-corporate { 
+            background: #141414;
+            border: 1px solid #1F1F1F;
+            transition: all 0.3s ease;
+        }
+
+        .btn-premium {
+            background: #FFC600;
+            color: #0D0D0D;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        @media (max-width: 640px) {
+            .mobile-padding { padding-left: 1.5rem; padding-right: 1.5rem; }
+        }
+    </style>
+</head>
+<body class="mesh-bg">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 w-full z-50 border-b border-white/5 backdrop-blur-xl bg-richBlack/95">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center">
+                <img src="https://lh3.googleusercontent.com/d/1BDdB7Z4wqvy7Xleqwpzpfj3yQpOlUE7g" 
+                     alt="TCAM Logo" 
+                     class="h-10 w-auto object-contain">
+            </a>
+            <a href="https://wa.me/5547988956346" target="_blank" class="btn-premium px-5 py-2.5 rounded-md font-bold text-[11px] uppercase tracking-widest text-center">
+                Seja Parceiro
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION COM A NOVA IMAGEM -->
+    <section class="relative min-h-[90vh] flex items-center pt-24 pb-12 mobile-padding">
+        <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-12 items-center">
+            <div class="max-w-3xl">
+                <div class="inline-block text-tcamYellow text-[11px] font-bold uppercase tracking-[0.2em] mb-6">
+                    Campo Mourão • PR
+                </div>
+                <h1 class="font-title h-hero mb-8 uppercase italic">
+                    Sua audiência física <br>gerando <span class="text-tcamYellow underline">lucro mensal.</span>
+                </h1>
+                <p class="text-gray-400 text-lg md:text-xl font-light mb-10 leading-relaxed">
+                    Transformamos o fluxo de pessoas do seu estabelecimento em um canal publicitário estratégico através de telas de publicidade.
+                </p>
+                <a href="https://wa.me/5547988956346" class="btn-premium px-10 py-5 rounded-lg font-bold text-sm uppercase tracking-widest text-center flex items-center justify-center gap-3 shadow-2xl">
+                    Quero ser um parceiro <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+            </div>
+
+            <!-- NOVA FOTO: Pessoa olhando para a tela -->
+            <div class="relative group mt-8 lg:mt-0">
+                <div class="absolute inset-0 bg-tcamYellow/10 blur-[80px] rounded-full group-hover:bg-tcamYellow/15 transition-all"></div>
+                <div class="relative border border-white/10 rounded-2xl overflow-hidden shadow-2xl">
+                    <img src="https://lh3.googleusercontent.com/d/1HEA0e49ZSVMHoR02p_TSiOtoUrHxqcwH" 
+                         alt="Experiência Indoor TCAM" 
+                         class="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-105">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE A TCAM -->
+    <section id="sobre" class="py-20 mobile-padding border-t border-white/5 bg-richBlack/50">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="font-title h-section uppercase mb-8 leading-tight">Especialistas em <br><span class="text-tcamYellow">Publicidade Indoor</span></h2>
+                <p class="text-gray-400 text-lg mb-6 font-light">
+                    A TCAM conecta marcas regionais a consumidores qualificados no momento exato da decisão de compra.
+                </p>
+                <p class="text-gray-400 text-lg font-light">
+                    Nossa operação em Campo Mourão foca em tecnologia de exibição para valorizar o comércio local e gerar rentabilidade para nossos parceiros.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-center">
+                <div class="p-8 card-corporate rounded-xl">
+                    <div class="text-tcamYellow font-title text-4xl mb-2 font-black italic uppercase">PR</div>
+                    <p class="text-[10px] uppercase font-bold text-gray-500 tracking-widest">Sede Campo Mourão</p>
+                </div>
+                <div class="p-8 card-corporate rounded-xl">
+                    <div class="text-tcamYellow font-title text-4xl mb-2 font-black italic uppercase">PRO</div>
+                    <p class="text-[10px] uppercase font-bold text-gray-500 tracking-widest">Gestão de Telas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE INFORMAÇÃO / AVANÇO (COM A IMAGEM DE INFORMAÇÕES) -->
+    <section class="py-20 mobile-padding border-y border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center bg-[#111] rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+                <div class="h-[350px] lg:h-[600px] overflow-hidden bg-zinc-900">
+                    <img src="https://lh3.googleusercontent.com/d/18mX487obPZ8IcPNnjTYHMiKAVRKIfCsU" 
+                         alt="Avanço Tecnologia TCAM" 
+                         class="w-full h-full object-cover grayscale opacity-70 transition-all duration-700 hover:scale-105 hover:opacity-100"
+                         loading="lazy">
+                </div>
+                <div class="p-8 lg:p-20">
+                    <div class="flex items-center gap-3 mb-8">
+                        <span class="text-tcamYellow font-bold text-xs uppercase tracking-[0.3em]">Avanço do Setor</span>
+                    </div>
+                    <h2 class="font-title text-3xl lg:text-5xl uppercase mb-8 leading-tight italic">
+                        O futuro da <span class="text-tcamYellow">Mídia Indoor</span> digital.
+                    </h2>
+                    <p class="text-gray-400 mb-10 text-lg leading-relaxed font-light">
+                        Dados publicados pelo Valor Econômico destacam que as telas de publicidade indoor são hoje o canal de comunicação que mais cresce no Brasil, oferecendo uma nova camada de lucro para estabelecimentos físicos.
+                    </p>
+                    <a href="https://valor.globo.com/google/amp/patrocinado/dino/noticia/2026/03/03/dooh-avanca-no-brasil-e-impulsiona-midia-indoor-1.ghtml" 
+                       target="_blank" class="inline-flex items-center gap-4 text-tcamYellow font-bold uppercase text-[10px] tracking-widest border-b border-tcamYellow pb-4 hover:gap-8 transition-all">
+                        Ler Artigo Completo <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section id="beneficios" class="py-20 mobile-padding">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-title h-section uppercase mb-16 text-center lg:text-left tracking-tight italic text-white">Vantagens da <span class="text-tcamYellow underline">Parceria</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card-corporate p-12 rounded-2xl flex flex-col justify-between min-h-[300px]">
+                    <i data-lucide="trending-up" class="w-10 h-10 text-tcamYellow mb-8"></i>
+                    <div>
+                        <h3 class="font-title text-xl uppercase mb-4 tracking-wide">Receita Extra</h3>
+                        <p class="text-gray-500 text-sm font-light">Monetize o tempo de permanência do seu cliente através de anúncios dinâmicos.</p>
+                    </div>
+                </div>
+                <div class="card-corporate p-12 rounded-2xl flex flex-col justify-between min-h-[300px]">
+                    <i data-lucide="layout" class="w-10 h-10 text-tcamYellow mb-8"></i>
+                    <div>
+                        <h3 class="font-title text-xl uppercase mb-4 tracking-wide">Modernização</h3>
+                        <p class="text-gray-500 text-sm font-light">Telas de publicidade que elevam a percepção tecnológica do seu estabelecimento.</p>
+                    </div>
+                </div>
+                <div class="card-corporate p-12 rounded-2xl flex flex-col justify-between min-h-[300px]">
+                    <i data-lucide="check-circle" class="w-10 h-10 text-tcamYellow mb-8"></i>
+                    <div>
+                        <h3 class="font-title text-xl uppercase mb-4 tracking-wide">Gestão TCAM</h3>
+                        <p class="text-gray-500 text-sm font-light">Cuidamos de 100% da instalação, manutenção e programação do conteúdo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black pt-20 pb-10 border-t border-white/5 mobile-padding text-center md:text-left">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <div class="lg:col-span-2 flex flex-col items-center md:items-start">
+                <img src="https://lh3.googleusercontent.com/d/1BDdB7Z4wqvy7Xleqwpzpfj3yQpOlUE7g" 
+                     alt="TCAM Logo" 
+                     class="h-12 w-auto object-contain mb-6">
+                <p class="text-gray-500 max-w-sm font-light italic">Liderando a publicidade indoor em Campo Mourão e região.</p>
+            </div>
+            <div>
+                <h4 class="text-tcamYellow font-bold uppercase text-[10px] tracking-widest mb-6 border-b border-tcamYellow/20 pb-2 inline-block">Contato</h4>
+                <p class="text-gray-400 text-sm font-bold mb-2">(47) 98895-6346</p>
+                <p class="text-gray-500 text-xs italic">suportetcamcomunicacao@gmail.com</p>
+            </div>
+            <div>
+                <h4 class="text-tcamYellow font-bold uppercase text-[10px] tracking-widest mb-6 border-b border-tcamYellow/20 pb-2 inline-block">Redes</h4>
+                <a href="https://instagram.com/tcamcomunicacao" target="_blank" class="text-gray-400 text-sm flex items-center justify-center md:justify-start gap-2 hover:text-white transition-all font-bold tracking-tighter italic">
+                    <i data-lucide="instagram" class="w-4 h-4 text-tcamYellow"></i> @tcamcomunicacao
+                </a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <span class="text-[9px] text-gray-700 font-black uppercase tracking-[0.5em]">&copy; 2025 TCAM DOMINATION</span>
+            <span class="text-tcamYellow/30 italic uppercase text-[8px] tracking-widest">Developed by Vibe Studio Architect</span>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
